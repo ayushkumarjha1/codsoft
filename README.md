@@ -36,6 +36,20 @@ Features:
 - Python
 - Tkinter
 - SQLite
+  
+  ## Screenshots
+
+### Calculator
+
+![Calculator](images/calculator.png)
+
+### Contact Book
+
+![Contact Book](images/contact_book.png)
+
+### To-Do List
+
+![To-Do List](images/todo_app.png)
 
 ## Author
 
