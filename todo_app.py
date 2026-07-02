@@ -4,41 +4,41 @@ class ToDoListApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Todo List App")
-        self.root.config(bg="#B2D8D8")  # set background color
+        self.root.config(bg="#B2D8D8")  
         self.tasks = []
 
-        # Set font and sizes
+        # configure apllication fonts
         self.font = "Inter"
         self.font_size = 13
 
-        # Set background colors
-        self.bg_color = "#D9F7BE"  # light green
-        self.box_color = "#B2D8D8"  # light blue
-        self.add_button_bg_color = "#2ECC40"  # green
-        self.add_button_fg_color = "#000000"  # black
-        self.delete_button_bg_color = "#FF3737"  # red
-        self.delete_button_fg_color = "#000000"  # black
-        self.task_fg_color = "#032B44"  # deep blue
+        # Define application colour scheme
+        self.bg_color = "#D9F7BE"  
+        self.box_color = "#B2D8D8"  
+        self.add_button_bg_color = "#2ECC40"  
+        self.add_button_fg_color = "#000000"  
+        self.delete_button_bg_color = "#FF3737" 
+        self.delete_button_fg_color = "#000000"  
+        self.task_fg_color = "#032B44" 
 
-        # Create main frame
+        # Create main application frame
         self.main_frame = tk.Frame(self.root, bg=self.bg_color)
         self.main_frame.pack(fill="both", expand=True)
 
-        # Create task entry field
+        # Create task entry input field
         self.task_entry = tk.Entry(self.main_frame, width=20, font=(self.font, self.font_size))
         self.task_entry.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
 
-        # Create add task button
+        # Create the Add task button
         self.add_task_button = tk.Button(self.main_frame, text="Add Task", command=self.add_task,
                                          font=(self.font, self.font_size), bg=self.add_button_bg_color, fg=self.add_button_fg_color)
         self.add_task_button.grid(row=0, column=1, sticky="ew")
 
-        # Create delete task button
+        # Create the delete task button
         self.delete_task_button = tk.Button(self.main_frame, text="Delete Task", command=self.delete_task,
                                             font=(self.font, self.font_size), bg=self.delete_button_bg_color, fg=self.delete_button_fg_color)
         self.delete_task_button.grid(row=0, column=2, sticky="ew")
 
-        # Create task list box
+        # Create the task list box
         self.task_list = tk.Listbox(self.main_frame, width=20, height=10, font=(self.font, self.font_size), bg=self.box_color, fg=self.task_fg_color)
         self.task_list.grid(row=1, column=0, columnspan=3, padx=10, pady=10, sticky="nsew")
 
@@ -55,10 +55,10 @@ class ToDoListApp:
         task = self.task_entry.get()
         if task:
             self.tasks.append(task)
-            self.task_list.insert("end", f"• {task}")  # add bullet point
-            self.task_entry.delete(0, tk.END)  # clear the entry field
-            self.task_entry.focus_set()  # move focus back to the task entry field
-
+            self.task_list.insert("end", f"• {task}") 
+            self.task_entry.delete(0, tk.END)  
+            self.task_entry.focus_set()  
+            
     def delete_task(self):
         try:
             task_index = self.task_list.curselection()[0]
