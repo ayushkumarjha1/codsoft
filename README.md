@@ -2,55 +2,66 @@
 
 This repository contains the Python projects completed during my CODSOFT Python Programming Internship.
 
-## Projects
+---
 
-### 1. Calculator
+##  Calculator
+
 A GUI calculator built using Python and Tkinter.
 
-Features:
+### Features
 - Addition
 - Subtraction
 - Multiplication
 - Division
 - Keyboard support
 
-### 2. To-Do List
+### Screenshot
+
+![Calculator](images/calculator.png)
+
+---
+
+##  To-Do List
+
 A task management application.
 
-Features:
+### Features
 - Add tasks
 - Delete tasks
 - Save tasks
 
-### 3. Contact Book
+### Screenshot
+
+![To-Do List](images/todo_app.png)
+
+---
+
+##  Contact Book
+
 A contact management system.
 
-Features:
+### Features
 - Add contacts
 - Search contacts
 - Update contacts
 - Delete contacts
 
-## Technologies Used
+### Screenshot
+
+![Contact Book](images/contact_book.png)
+
+---
+
+##  Technologies Used
 
 - Python
 - Tkinter
 - SQLite
-  
-  ## Screenshots
 
-### Calculator
+---
 
-![Calculator](images/calculator.png)
+## 👨‍💻 Author
 
-### Contact Book
+**Ayush Kumar Jha**
 
-![Contact Book](images/contact_book.png)
-
-### To-Do List
-
-![To-Do List](images/todo_app.png)
-
-## Author
-
-Ayush Kumar Jha
+GitHub: https://github.com/ayushkumarjha1
